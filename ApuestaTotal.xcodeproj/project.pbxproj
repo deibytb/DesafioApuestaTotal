@@ -8,12 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		C47D309B2CC2484800ED5863 /* ApuestaTotalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D309A2CC2484800ED5863 /* ApuestaTotalApp.swift */; };
-		C47D309D2CC2484800ED5863 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D309C2CC2484800ED5863 /* ContentView.swift */; };
 		C47D309F2CC2484900ED5863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47D309E2CC2484900ED5863 /* Assets.xcassets */; };
 		C47D30A22CC2484900ED5863 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47D30A12CC2484900ED5863 /* Preview Assets.xcassets */; };
 		C47D30AC2CC2484900ED5863 /* ApuestaTotalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30AB2CC2484900ED5863 /* ApuestaTotalTests.swift */; };
 		C47D30B62CC2484900ED5863 /* ApuestaTotalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30B52CC2484900ED5863 /* ApuestaTotalUITests.swift */; };
 		C47D30B82CC2484900ED5863 /* ApuestaTotalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30B72CC2484900ED5863 /* ApuestaTotalUITestsLaunchTests.swift */; };
+		C47D30CC2CC24B3B00ED5863 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30CB2CC24B3B00ED5863 /* Bet.swift */; };
+		C47D30CE2CC24B4800ED5863 /* BetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30CD2CC24B4800ED5863 /* BetDetail.swift */; };
+		C47D30D32CC24D5000ED5863 /* betsAll.json in Resources */ = {isa = PBXBuildFile; fileRef = C47D30D12CC24D5000ED5863 /* betsAll.json */; };
+		C47D30D42CC24D5000ED5863 /* betsDetailsAll.json in Resources */ = {isa = PBXBuildFile; fileRef = C47D30D22CC24D5000ED5863 /* betsDetailsAll.json */; };
+		C47D30D72CC24DAF00ED5863 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30D62CC24DAF00ED5863 /* JSONLoader.swift */; };
+		C47D30D92CC2B41F00ED5863 /* BetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30D82CC2B41F00ED5863 /* BetService.swift */; };
+		C47D30DB2CC2B44F00ED5863 /* BetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30DA2CC2B44F00ED5863 /* BetRepository.swift */; };
+		C47D30DD2CC2B49400ED5863 /* GetBetsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30DC2CC2B49400ED5863 /* GetBetsUseCase.swift */; };
+		C47D30DF2CC2B4F100ED5863 /* BetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30DE2CC2B4F100ED5863 /* BetListViewModel.swift */; };
+		C47D30E12CC2B51900ED5863 /* BetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30E02CC2B51900ED5863 /* BetListView.swift */; };
+		C47D30E32CC2FD9300ED5863 /* BetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30E22CC2FD9300ED5863 /* BetViewModel.swift */; };
+		C47D30E52CC2FE7900ED5863 /* BetDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30E42CC2FE7900ED5863 /* BetDetailRepository.swift */; };
+		C47D30E72CC3074700ED5863 /* BetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30E62CC3074700ED5863 /* BetCardView.swift */; };
+		C47D30EB2CC33A6A00ED5863 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C47D30E92CC33A6A00ED5863 /* Rubik-Regular.ttf */; };
+		C47D30EC2CC33A6A00ED5863 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C47D30EA2CC33A6A00ED5863 /* Rubik-Bold.ttf */; };
+		C47D30F02CC33B8B00ED5863 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30EF2CC33B8B00ED5863 /* Fonts.swift */; };
+		C47D30FB2CC62F6F00ED5863 /* FilterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30FA2CC62F6F00ED5863 /* FilterHandler.swift */; };
+		C47D30FD2CC62FB700ED5863 /* StatusFilterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30FC2CC62FB700ED5863 /* StatusFilterHandler.swift */; };
+		C47D30FF2CC62FFF00ED5863 /* TypeFilterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30FE2CC62FFF00ED5863 /* TypeFilterHandler.swift */; };
+		C47D31012CC6302300ED5863 /* SearchTextFilterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31002CC6302300ED5863 /* SearchTextFilterHandler.swift */; };
+		C47D31032CC6310200ED5863 /* FilterBetsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31022CC6310200ED5863 /* FilterBetsUseCase.swift */; };
+		C47D31052CC6D6D000ED5863 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31042CC6D6D000ED5863 /* Colors.swift */; };
+		C47D31072CC7416600ED5863 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31062CC7416600ED5863 /* MainView.swift */; };
+		C47D31092CC7418800ED5863 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31082CC7418800ED5863 /* SplashView.swift */; };
+		C47D310F2CC7473D00ED5863 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D310E2CC7473D00ED5863 /* UserService.swift */; };
+		C47D31112CC7477400ED5863 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31102CC7477400ED5863 /* User.swift */; };
+		C47D31132CC747CB00ED5863 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31122CC747CB00ED5863 /* UserRepository.swift */; };
+		C47D31152CC7481D00ED5863 /* ValidateUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31142CC7481D00ED5863 /* ValidateUserUseCase.swift */; };
+		C47D31172CC7484D00ED5863 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31162CC7484D00ED5863 /* LoginViewModel.swift */; };
+		C47D31192CC7489500ED5863 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31182CC7489500ED5863 /* LoginView.swift */; };
+		C47D311B2CC74C4400ED5863 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = C47D311A2CC74C4400ED5863 /* user.json */; };
+		C47D311D2CC74D5300ED5863 /* ValidateEmailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D311C2CC74D5300ED5863 /* ValidateEmailUseCase.swift */; };
+		C47D311F2CC756DD00ED5863 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D311E2CC756DD00ED5863 /* UIApplication+Extensions.swift */; };
+		C47D31232CC7571F00ED5863 /* DismissKeyboardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31222CC7571F00ED5863 /* DismissKeyboardModifier.swift */; };
+		C47D31252CC7584900ED5863 /* AnimatedCardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31242CC7584900ED5863 /* AnimatedCardModifier.swift */; };
+		C47D31282CC765DA00ED5863 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31272CC765DA00ED5863 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +71,6 @@
 /* Begin PBXFileReference section */
 		C47D30972CC2484800ED5863 /* ApuestaTotal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApuestaTotal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47D309A2CC2484800ED5863 /* ApuestaTotalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApuestaTotalApp.swift; sourceTree = "<group>"; };
-		C47D309C2CC2484800ED5863 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C47D309E2CC2484900ED5863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47D30A12CC2484900ED5863 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C47D30A72CC2484900ED5863 /* ApuestaTotalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApuestaTotalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +78,43 @@
 		C47D30B12CC2484900ED5863 /* ApuestaTotalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApuestaTotalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47D30B52CC2484900ED5863 /* ApuestaTotalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApuestaTotalUITests.swift; sourceTree = "<group>"; };
 		C47D30B72CC2484900ED5863 /* ApuestaTotalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApuestaTotalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C47D30CB2CC24B3B00ED5863 /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
+		C47D30CD2CC24B4800ED5863 /* BetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetDetail.swift; sourceTree = "<group>"; };
+		C47D30D12CC24D5000ED5863 /* betsAll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = betsAll.json; path = "../../../../../Desktop/drive-Desafio-ApuestTotal/betsAll.json"; sourceTree = "<group>"; };
+		C47D30D22CC24D5000ED5863 /* betsDetailsAll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = betsDetailsAll.json; path = "../../../../../Desktop/drive-Desafio-ApuestTotal/betsDetailsAll.json"; sourceTree = "<group>"; };
+		C47D30D62CC24DAF00ED5863 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		C47D30D82CC2B41F00ED5863 /* BetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetService.swift; sourceTree = "<group>"; };
+		C47D30DA2CC2B44F00ED5863 /* BetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetRepository.swift; sourceTree = "<group>"; };
+		C47D30DC2CC2B49400ED5863 /* GetBetsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBetsUseCase.swift; sourceTree = "<group>"; };
+		C47D30DE2CC2B4F100ED5863 /* BetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewModel.swift; sourceTree = "<group>"; };
+		C47D30E02CC2B51900ED5863 /* BetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListView.swift; sourceTree = "<group>"; };
+		C47D30E22CC2FD9300ED5863 /* BetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetViewModel.swift; sourceTree = "<group>"; };
+		C47D30E42CC2FE7900ED5863 /* BetDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetDetailRepository.swift; sourceTree = "<group>"; };
+		C47D30E62CC3074700ED5863 /* BetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetCardView.swift; sourceTree = "<group>"; };
+		C47D30E92CC33A6A00ED5863 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Regular.ttf"; path = "../../../../../Downloads/Rubik/static/Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		C47D30EA2CC33A6A00ED5863 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Bold.ttf"; path = "../../../../../Downloads/Rubik/static/Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		C47D30ED2CC33AC400ED5863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C47D30EF2CC33B8B00ED5863 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		C47D30FA2CC62F6F00ED5863 /* FilterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterHandler.swift; sourceTree = "<group>"; };
+		C47D30FC2CC62FB700ED5863 /* StatusFilterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusFilterHandler.swift; sourceTree = "<group>"; };
+		C47D30FE2CC62FFF00ED5863 /* TypeFilterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeFilterHandler.swift; sourceTree = "<group>"; };
+		C47D31002CC6302300ED5863 /* SearchTextFilterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFilterHandler.swift; sourceTree = "<group>"; };
+		C47D31022CC6310200ED5863 /* FilterBetsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBetsUseCase.swift; sourceTree = "<group>"; };
+		C47D31042CC6D6D000ED5863 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C47D31062CC7416600ED5863 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C47D31082CC7418800ED5863 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C47D310E2CC7473D00ED5863 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		C47D31102CC7477400ED5863 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C47D31122CC747CB00ED5863 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		C47D31142CC7481D00ED5863 /* ValidateUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUserUseCase.swift; sourceTree = "<group>"; };
+		C47D31162CC7484D00ED5863 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C47D31182CC7489500ED5863 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C47D311A2CC74C4400ED5863 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = user.json; path = "../../../../../Downloads/drive-Desafio-ApuestTotal/user.json"; sourceTree = "<group>"; };
+		C47D311C2CC74D5300ED5863 /* ValidateEmailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmailUseCase.swift; sourceTree = "<group>"; };
+		C47D311E2CC756DD00ED5863 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		C47D31222CC7571F00ED5863 /* DismissKeyboardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardModifier.swift; sourceTree = "<group>"; };
+		C47D31242CC7584900ED5863 /* AnimatedCardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCardModifier.swift; sourceTree = "<group>"; };
+		C47D31272CC765DA00ED5863 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +165,15 @@
 		C47D30992CC2484800ED5863 /* ApuestaTotal */ = {
 			isa = PBXGroup;
 			children = (
+				C47D30ED2CC33AC400ED5863 /* Info.plist */,
+				C47D30C42CC248C000ED5863 /* Core */,
+				C47D30C62CC248D400ED5863 /* Features */,
+				C47D30D52CC24D9500ED5863 /* Utilities */,
+				C47D30CF2CC24D2800ED5863 /* Resources */,
+				C47D30EE2CC33B7400ED5863 /* Theme */,
 				C47D309A2CC2484800ED5863 /* ApuestaTotalApp.swift */,
-				C47D309C2CC2484800ED5863 /* ContentView.swift */,
+				C47D31062CC7416600ED5863 /* MainView.swift */,
+				C47D31082CC7418800ED5863 /* SplashView.swift */,
 				C47D309E2CC2484900ED5863 /* Assets.xcassets */,
 				C47D30A02CC2484900ED5863 /* Preview Content */,
 			);
@@ -125,6 +203,195 @@
 				C47D30B72CC2484900ED5863 /* ApuestaTotalUITestsLaunchTests.swift */,
 			);
 			path = ApuestaTotalUITests;
+			sourceTree = "<group>";
+		};
+		C47D30C42CC248C000ED5863 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30C52CC248C700ED5863 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C47D30C52CC248C700ED5863 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30CB2CC24B3B00ED5863 /* Bet.swift */,
+				C47D30CD2CC24B4800ED5863 /* BetDetail.swift */,
+				C47D31102CC7477400ED5863 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C47D30C62CC248D400ED5863 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C47D31262CC765B900ED5863 /* Common */,
+				C47D310A2CC7465900ED5863 /* Auth */,
+				C47D30C72CC2492000ED5863 /* BetList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C47D30C72CC2492000ED5863 /* BetList */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30C82CC2493000ED5863 /* Data */,
+				C47D30C92CC2493500ED5863 /* Domain */,
+				C47D30CA2CC2494000ED5863 /* Presentation */,
+			);
+			path = BetList;
+			sourceTree = "<group>";
+		};
+		C47D30C82CC2493000ED5863 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30D82CC2B41F00ED5863 /* BetService.swift */,
+				C47D30DA2CC2B44F00ED5863 /* BetRepository.swift */,
+				C47D30E42CC2FE7900ED5863 /* BetDetailRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C47D30C92CC2493500ED5863 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30F92CC62F5C00ED5863 /* Filters */,
+				C47D30DC2CC2B49400ED5863 /* GetBetsUseCase.swift */,
+				C47D31022CC6310200ED5863 /* FilterBetsUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C47D30CA2CC2494000ED5863 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30DE2CC2B4F100ED5863 /* BetListViewModel.swift */,
+				C47D30F52CC4D3DB00ED5863 /* List */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C47D30CF2CC24D2800ED5863 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30E82CC3399C00ED5863 /* Fonts */,
+				C47D30D02CC24D3300ED5863 /* JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C47D30D02CC24D3300ED5863 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C47D311A2CC74C4400ED5863 /* user.json */,
+				C47D30D12CC24D5000ED5863 /* betsAll.json */,
+				C47D30D22CC24D5000ED5863 /* betsDetailsAll.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		C47D30D52CC24D9500ED5863 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C47D31212CC7570A00ED5863 /* Modifiers */,
+				C47D30D62CC24DAF00ED5863 /* JSONLoader.swift */,
+				C47D311E2CC756DD00ED5863 /* UIApplication+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C47D30E82CC3399C00ED5863 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30EA2CC33A6A00ED5863 /* Rubik-Bold.ttf */,
+				C47D30E92CC33A6A00ED5863 /* Rubik-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C47D30EE2CC33B7400ED5863 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30EF2CC33B8B00ED5863 /* Fonts.swift */,
+				C47D31042CC6D6D000ED5863 /* Colors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		C47D30F52CC4D3DB00ED5863 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30E22CC2FD9300ED5863 /* BetViewModel.swift */,
+				C47D30E02CC2B51900ED5863 /* BetListView.swift */,
+				C47D30E62CC3074700ED5863 /* BetCardView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C47D30F92CC62F5C00ED5863 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				C47D30FA2CC62F6F00ED5863 /* FilterHandler.swift */,
+				C47D30FC2CC62FB700ED5863 /* StatusFilterHandler.swift */,
+				C47D30FE2CC62FFF00ED5863 /* TypeFilterHandler.swift */,
+				C47D31002CC6302300ED5863 /* SearchTextFilterHandler.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		C47D310A2CC7465900ED5863 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C47D310B2CC7471400ED5863 /* Data */,
+				C47D310C2CC7471A00ED5863 /* Domain */,
+				C47D310D2CC7472400ED5863 /* Presentation */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C47D310B2CC7471400ED5863 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C47D310E2CC7473D00ED5863 /* UserService.swift */,
+				C47D31122CC747CB00ED5863 /* UserRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C47D310C2CC7471A00ED5863 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C47D31142CC7481D00ED5863 /* ValidateUserUseCase.swift */,
+				C47D311C2CC74D5300ED5863 /* ValidateEmailUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C47D310D2CC7472400ED5863 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C47D31162CC7484D00ED5863 /* LoginViewModel.swift */,
+				C47D31182CC7489500ED5863 /* LoginView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C47D31212CC7570A00ED5863 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C47D31222CC7571F00ED5863 /* DismissKeyboardModifier.swift */,
+				C47D31242CC7584900ED5863 /* AnimatedCardModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		C47D31262CC765B900ED5863 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C47D31272CC765DA00ED5863 /* AuthenticationViewModel.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +498,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47D311B2CC74C4400ED5863 /* user.json in Resources */,
+				C47D30D42CC24D5000ED5863 /* betsDetailsAll.json in Resources */,
+				C47D30EC2CC33A6A00ED5863 /* Rubik-Bold.ttf in Resources */,
 				C47D30A22CC2484900ED5863 /* Preview Assets.xcassets in Resources */,
 				C47D309F2CC2484900ED5863 /* Assets.xcassets in Resources */,
+				C47D30EB2CC33A6A00ED5863 /* Rubik-Regular.ttf in Resources */,
+				C47D30D32CC24D5000ED5863 /* betsAll.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +529,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47D309D2CC2484800ED5863 /* ContentView.swift in Sources */,
+				C47D30F02CC33B8B00ED5863 /* Fonts.swift in Sources */,
+				C47D31052CC6D6D000ED5863 /* Colors.swift in Sources */,
+				C47D30FF2CC62FFF00ED5863 /* TypeFilterHandler.swift in Sources */,
+				C47D30D72CC24DAF00ED5863 /* JSONLoader.swift in Sources */,
+				C47D31282CC765DA00ED5863 /* AuthenticationViewModel.swift in Sources */,
+				C47D31152CC7481D00ED5863 /* ValidateUserUseCase.swift in Sources */,
+				C47D30DF2CC2B4F100ED5863 /* BetListViewModel.swift in Sources */,
+				C47D310F2CC7473D00ED5863 /* UserService.swift in Sources */,
+				C47D30E52CC2FE7900ED5863 /* BetDetailRepository.swift in Sources */,
+				C47D311D2CC74D5300ED5863 /* ValidateEmailUseCase.swift in Sources */,
+				C47D31172CC7484D00ED5863 /* LoginViewModel.swift in Sources */,
+				C47D30D92CC2B41F00ED5863 /* BetService.swift in Sources */,
+				C47D30CE2CC24B4800ED5863 /* BetDetail.swift in Sources */,
+				C47D31132CC747CB00ED5863 /* UserRepository.swift in Sources */,
+				C47D30E72CC3074700ED5863 /* BetCardView.swift in Sources */,
+				C47D31252CC7584900ED5863 /* AnimatedCardModifier.swift in Sources */,
+				C47D30FB2CC62F6F00ED5863 /* FilterHandler.swift in Sources */,
+				C47D30E12CC2B51900ED5863 /* BetListView.swift in Sources */,
+				C47D311F2CC756DD00ED5863 /* UIApplication+Extensions.swift in Sources */,
+				C47D31032CC6310200ED5863 /* FilterBetsUseCase.swift in Sources */,
+				C47D30CC2CC24B3B00ED5863 /* Bet.swift in Sources */,
+				C47D31072CC7416600ED5863 /* MainView.swift in Sources */,
 				C47D309B2CC2484800ED5863 /* ApuestaTotalApp.swift in Sources */,
+				C47D30FD2CC62FB700ED5863 /* StatusFilterHandler.swift in Sources */,
+				C47D30E32CC2FD9300ED5863 /* BetViewModel.swift in Sources */,
+				C47D31192CC7489500ED5863 /* LoginView.swift in Sources */,
+				C47D31232CC7571F00ED5863 /* DismissKeyboardModifier.swift in Sources */,
+				C47D30DD2CC2B49400ED5863 /* GetBetsUseCase.swift in Sources */,
+				C47D30DB2CC2B44F00ED5863 /* BetRepository.swift in Sources */,
+				C47D31012CC6302300ED5863 /* SearchTextFilterHandler.swift in Sources */,
+				C47D31092CC7418800ED5863 /* SplashView.swift in Sources */,
+				C47D31112CC7477400ED5863 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +727,7 @@
 				DEVELOPMENT_TEAM = ZS673XW4LM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApuestaTotal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +757,7 @@
 				DEVELOPMENT_TEAM = ZS673XW4LM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApuestaTotal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ApuestaTotalApp: App {
+    @StateObject private var authViewModel = AuthenticationViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environmentObject(authViewModel)
         }
     }
 }
