@@ -236,9 +236,9 @@ extension BetLevel {
         case .master:
             return [.text("🏅")]
         case .capo:
-            return [.text("💪")]
+            return [.text("")]
         case .cazafijas:
-            return [.text("📝")]
+            return [.text("")]
         case .donatelo:
             return [.text("")]
         }
