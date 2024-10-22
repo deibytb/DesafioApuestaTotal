@@ -49,6 +49,11 @@
 		C47D31232CC7571F00ED5863 /* DismissKeyboardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31222CC7571F00ED5863 /* DismissKeyboardModifier.swift */; };
 		C47D31252CC7584900ED5863 /* AnimatedCardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31242CC7584900ED5863 /* AnimatedCardModifier.swift */; };
 		C47D31282CC765DA00ED5863 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31272CC765DA00ED5863 /* AuthenticationViewModel.swift */; };
+		C47D31302CC77A3F00ED5863 /* RoundedCross.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312A2CC77A3F00ED5863 /* RoundedCross.swift */; };
+		C47D31312CC77A3F00ED5863 /* SlimRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312B2CC77A3F00ED5863 /* SlimRectangle.swift */; };
+		C47D31322CC77A3F00ED5863 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312C2CC77A3F00ED5863 /* Triangle.swift */; };
+		C47D31332CC77A3F00ED5863 /* ConfettiSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312E2CC77A3F00ED5863 /* ConfettiSwiftUI.swift */; };
+		C47D31342CC77A3F00ED5863 /* View+ConfettiCannon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312F2CC77A3F00ED5863 /* View+ConfettiCannon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +120,11 @@
 		C47D31222CC7571F00ED5863 /* DismissKeyboardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardModifier.swift; sourceTree = "<group>"; };
 		C47D31242CC7584900ED5863 /* AnimatedCardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCardModifier.swift; sourceTree = "<group>"; };
 		C47D31272CC765DA00ED5863 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		C47D312A2CC77A3F00ED5863 /* RoundedCross.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCross.swift; sourceTree = "<group>"; };
+		C47D312B2CC77A3F00ED5863 /* SlimRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimRectangle.swift; sourceTree = "<group>"; };
+		C47D312C2CC77A3F00ED5863 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		C47D312E2CC77A3F00ED5863 /* ConfettiSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfettiSwiftUI.swift; path = "../../../../../Downloads/ConfettiSwiftUI-master/Sources/ConfettiSwiftUI.swift"; sourceTree = "<group>"; };
+		C47D312F2CC77A3F00ED5863 /* View+ConfettiCannon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+ConfettiCannon.swift"; path = "../../../../../Downloads/ConfettiSwiftUI-master/Sources/View+ConfettiCannon.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +285,7 @@
 		C47D30CF2CC24D2800ED5863 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C47D31292CC77A2800ED5863 /* ConfettiSwiftUI */,
 				C47D30E82CC3399C00ED5863 /* Fonts */,
 				C47D30D02CC24D3300ED5863 /* JSON */,
 			);
@@ -392,6 +403,27 @@
 				C47D31272CC765DA00ED5863 /* AuthenticationViewModel.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		C47D31292CC77A2800ED5863 /* ConfettiSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				C47D312D2CC77A3F00ED5863 /* Shapes */,
+				C47D312E2CC77A3F00ED5863 /* ConfettiSwiftUI.swift */,
+				C47D312F2CC77A3F00ED5863 /* View+ConfettiCannon.swift */,
+			);
+			path = ConfettiSwiftUI;
+			sourceTree = "<group>";
+		};
+		C47D312D2CC77A3F00ED5863 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				C47D312A2CC77A3F00ED5863 /* RoundedCross.swift */,
+				C47D312B2CC77A3F00ED5863 /* SlimRectangle.swift */,
+				C47D312C2CC77A3F00ED5863 /* Triangle.swift */,
+			);
+			name = Shapes;
+			path = "../../../../../Downloads/ConfettiSwiftUI-master/Sources/Shapes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,6 +562,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47D30F02CC33B8B00ED5863 /* Fonts.swift in Sources */,
+				C47D31302CC77A3F00ED5863 /* RoundedCross.swift in Sources */,
+				C47D31342CC77A3F00ED5863 /* View+ConfettiCannon.swift in Sources */,
 				C47D31052CC6D6D000ED5863 /* Colors.swift in Sources */,
 				C47D30FF2CC62FFF00ED5863 /* TypeFilterHandler.swift in Sources */,
 				C47D30D72CC24DAF00ED5863 /* JSONLoader.swift in Sources */,
@@ -540,6 +574,7 @@
 				C47D30E52CC2FE7900ED5863 /* BetDetailRepository.swift in Sources */,
 				C47D311D2CC74D5300ED5863 /* ValidateEmailUseCase.swift in Sources */,
 				C47D31172CC7484D00ED5863 /* LoginViewModel.swift in Sources */,
+				C47D31322CC77A3F00ED5863 /* Triangle.swift in Sources */,
 				C47D30D92CC2B41F00ED5863 /* BetService.swift in Sources */,
 				C47D30CE2CC24B4800ED5863 /* BetDetail.swift in Sources */,
 				C47D31132CC747CB00ED5863 /* UserRepository.swift in Sources */,
@@ -548,7 +583,9 @@
 				C47D30FB2CC62F6F00ED5863 /* FilterHandler.swift in Sources */,
 				C47D30E12CC2B51900ED5863 /* BetListView.swift in Sources */,
 				C47D311F2CC756DD00ED5863 /* UIApplication+Extensions.swift in Sources */,
+				C47D31312CC77A3F00ED5863 /* SlimRectangle.swift in Sources */,
 				C47D31032CC6310200ED5863 /* FilterBetsUseCase.swift in Sources */,
+				C47D31332CC77A3F00ED5863 /* ConfettiSwiftUI.swift in Sources */,
 				C47D30CC2CC24B3B00ED5863 /* Bet.swift in Sources */,
 				C47D31072CC7416600ED5863 /* MainView.swift in Sources */,
 				C47D309B2CC2484800ED5863 /* ApuestaTotalApp.swift in Sources */,
@@ -721,6 +758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ApuestaTotal/Preview Content\"";
@@ -751,6 +789,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ApuestaTotal/Preview Content\"";

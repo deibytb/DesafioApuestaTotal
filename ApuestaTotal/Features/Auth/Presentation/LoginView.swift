@@ -84,6 +84,12 @@ struct LoginView: View {
                 }
                 
                 Spacer()
+                
+                if viewModel.isLoading {
+                    ProgressView()
+                }
+                
+                Spacer()
             }
             .padding(.horizontal, 24)
             .onAppear(perform: {

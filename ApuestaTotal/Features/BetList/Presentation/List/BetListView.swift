@@ -17,9 +17,6 @@ struct BetListView: View {
     @State private var selectedType: BetType? = nil
     @State private var showFilters: Bool = false
     
-    @State private var isCollapsed: Bool = false
-    @State private var lastScrollPosition: CGFloat = 0
-    
     let user: User
     
     var body: some View {
@@ -55,30 +52,6 @@ struct BetListView: View {
                             }
                             .padding(.horizontal)
                             .padding(.top)
-                            .background(
-                                GeometryReader { geo in
-                                    Color.clear
-                                        .onAppear {
-                                            lastScrollPosition = geo.frame(in: .global).minY
-                                        }
-                                        .onChange(of: geo.frame(in: .global).minY) { oldValue, newValue in
-                                            let offset = newValue - lastScrollPosition
-                                            lastScrollPosition = newValue
-                                            print(offset)
-                                            
-                                            // Asegurarse de que no se colapse si estamos en la parte superior del ScrollView
-                                            if newValue > 0 {
-                                                isCollapsed = false
-                                            } else if offset < 0 {
-                                                // Desplazamiento hacia abajo
-                                                isCollapsed = true
-                                            } else if offset > 0 {
-                                                // Desplazamiento hacia arriba
-                                                isCollapsed = false
-                                            }
-                                        }
-                                }
-                            )
                         }
                         .coordinateSpace(name: "scroll")
                         .background(AppColors.background)
@@ -98,40 +71,38 @@ struct BetListView: View {
     
     var customNavBar: some View {
         VStack(spacing: 8) {
-            if !isCollapsed {
-                VStack {
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            authViewModel.logout()
-                        }) {
-                            HStack(spacing: 6) {
-                                Text("Cerrar sesión")
-                                    .font(AppFonts.bold(size: 14))
-                                    .foregroundColor(AppColors.cardBackground)
-                                Image(systemName: "door.left.hand.open")
-                                    .font(.system(size: 16, weight: .medium))
-                                    .foregroundColor(AppColors.cardBackground)
-                            }
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 8)
-                            .background(AppColors.text)
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
+            VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        authViewModel.logout()
+                    }) {
+                        HStack(spacing: 6) {
+                            Text("Cerrar sesión")
+                                .font(AppFonts.bold(size: 14))
+                                .foregroundColor(AppColors.cardBackground)
+                            Image(systemName: "door.left.hand.open")
+                                .font(.system(size: 16, weight: .medium))
+                                .foregroundColor(AppColors.cardBackground)
                         }
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .background(AppColors.text)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
                     }
-                    .padding(.horizontal)
-                    .padding(.top, 16)
-                    
-                    HStack(alignment: .bottom) {
-                        Text("Bienvenido, \(user.name)")
-                            .font(AppFonts.bold(size: 24))
-                            .foregroundStyle(AppColors.cardBackground)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    .padding(.top, 16)
                 }
+                .padding(.horizontal)
+                .padding(.top, 16)
+                
+                HStack(alignment: .bottom) {
+                    Text("Bienvenido, \(user.name)")
+                        .font(AppFonts.bold(size: 24))
+                        .foregroundStyle(AppColors.cardBackground)
+                    Spacer()
+                }
+                .padding(.horizontal)
+                .padding(.top, 16)
             }
             
             VStack {
@@ -157,7 +128,6 @@ struct BetListView: View {
             .padding(.bottom, 8)
         }
         .background(AppColors.primary)
-        .animation(.smooth(duration: 0.3).speed(2), value: isCollapsed)
     }
     
     var searchField: some View {

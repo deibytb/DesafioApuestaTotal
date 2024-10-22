@@ -10,6 +10,7 @@ import SwiftUI
 struct BetCardView: View {
     
     @State private var isExpanded: Bool = false
+    @State private var counter: Int = 0
     
     let data: BetViewModel
 
@@ -37,10 +38,16 @@ struct BetCardView: View {
                     foregroundColor: AppColors.text)
                 
                 // Estado de la apuesta
-                tag(title: data.status.title,
-                    icon: data.status == .won ? data.icon : nil,
-                    background: data.status.color,
-                    foregroundColor: .white.opacity(0.8))
+                if data.status == .won || data.status == .cashout {
+                    tag(title: "\(data.status.title)  \(data.level.icon)",
+                        background: data.status.color,
+                        foregroundColor: .white.opacity(0.8))
+                } else {
+                    tag(title: "\(data.status.title)",
+                        background: data.status.color,
+                        foregroundColor: .white.opacity(0.8))
+                }
+                
             }
             
             VStack(alignment: .leading, spacing: 4, content: {
@@ -73,6 +80,7 @@ struct BetCardView: View {
                         .frame(width: 90)
                 }
             }
+            .confettiCannon(counter: $counter, confettis: data.level.confettis, confettiSize: 25, repetitions: 2, repetitionInterval: 0.5)
             
             if isExpanded {
                 Divider()
@@ -175,6 +183,13 @@ struct BetCardView: View {
                 isExpanded.toggle()
             }
         }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                withAnimation {
+                    counter += 1
+                }
+            })
+        }
     }
     
     func tag(title: String, icon: String? = nil, background: Color, foregroundColor: Color) -> some View {
@@ -207,6 +222,25 @@ struct BetCardView: View {
             Text(value)
                 .font(isBold ? AppFonts.bold(size: 16) : AppFonts.regular(size: 16))
                 .foregroundColor(isBold ? data.status.color : AppColors.text)
+        }
+    }
+}
+
+extension BetLevel {
+    var confettis: [ConfettiType] {
+        switch self {
+        case .leyenda:
+            return [.text("💵")]
+        case .king:
+            return [.text("👑")]
+        case .master:
+            return [.text("🏅")]
+        case .capo:
+            return [.text("💪")]
+        case .cazafijas:
+            return [.text("📝")]
+        case .donatelo:
+            return [.text("")]
         }
     }
 }

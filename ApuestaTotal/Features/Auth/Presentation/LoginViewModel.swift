@@ -8,6 +8,9 @@
 import Foundation
 
 class LoginViewModel: ObservableObject {
+    
+    @Published var isLoading: Bool = false
+    
     @Published var correo: String = "deibytb@outlook.com"
     @Published var password: String = "123456"
     @Published var emailIsValid: Bool?
@@ -27,12 +30,20 @@ class LoginViewModel: ObservableObject {
     }
     
     func login() {
+        DispatchQueue.main.async { self.isLoading = true }
         if let user = validateUserUseCase.execute(correo: correo, password: password) {
-            authenticateUser = user
-            isAuthenticated = true
-            errorMessage = nil
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+                self.authenticateUser = user
+                self.isAuthenticated = true
+                self.errorMessage = nil
+                
+                DispatchQueue.main.async { self.isLoading = false }
+            })
         } else {
-            errorMessage = "Correo o contraseña incorrectos"
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+                self.errorMessage = "Correo o contraseña incorrectos"
+                self.isLoading = false
+            })
         }
     }
     

@@ -54,17 +54,17 @@ enum BetLevel: String, Codable {
     var icon: String {
         switch self {
         case .leyenda:
-            return "crown.fill"
+            return "💵"
         case .king:
-            return "diamond.inset.filled"
+            return "👑"
         case .master:
-            return "hare.fill"
+            return "🏅"
         case .capo:
-            return "gamecontroller.fill"
+            return "💪"
         case .cazafijas:
-            return "binoculars.fill"
+            return "📝"
         case .donatelo:
-            return "slowmo"
+            return ""
         }
     }
 }
