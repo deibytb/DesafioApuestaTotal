@@ -65,6 +65,7 @@ struct LoginView: View {
                 }
                 
                 Button(action: {
+                    UIApplication.shared.endEditing()
                     viewModel.login()
                 }) {
                     Text("Iniciar Sesión")

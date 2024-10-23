@@ -17,7 +17,9 @@ class BetService: BetServiceProtocol {
         if let bets: [Bet] = loadJSON(file: .betsAll) {
             completion(.success(bets))
         } else {
-            completion(.failure(NSError(domain: "BetServiceError", code: -1, userInfo: [NSLocalizedDescriptionKey: "Failed to load bets"])))
+            completion(.failure(NSError(domain: "BetServiceError", 
+                                        code: -1,
+                                        userInfo: [NSLocalizedDescriptionKey: "Failed to load bets"])))
         }
     }
     
@@ -25,7 +27,9 @@ class BetService: BetServiceProtocol {
         if let betDetails: [BetDetail] = loadJSON(file: .betsDetailsAll) {
             completion(.success(betDetails))
         } else {
-            completion(.failure(NSError(domain: "BetServiceError", code: -1, userInfo: [NSLocalizedDescriptionKey: "Failed to load bet details"])))
+            completion(.failure(NSError(domain: "BetServiceError", 
+                                        code: -1,
+                                        userInfo: [NSLocalizedDescriptionKey: "Failed to load bet details"])))
         }
     }
 }

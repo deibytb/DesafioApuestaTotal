@@ -22,6 +22,7 @@ struct BetListView: View {
     var body: some View {
         VStack(spacing: 0) {
             customNavBar
+                .dismissKeyboardOnTap()
             
             VStack {
                 if viewModel.isLoading {
@@ -55,6 +56,7 @@ struct BetListView: View {
                         }
                         .coordinateSpace(name: "scroll")
                         .background(AppColors.background)
+                        .dismissKeyboardOnTap()
                     }
                 }
             }

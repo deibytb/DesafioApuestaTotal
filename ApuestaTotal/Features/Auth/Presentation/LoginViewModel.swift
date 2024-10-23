@@ -11,8 +11,8 @@ class LoginViewModel: ObservableObject {
     
     @Published var isLoading: Bool = false
     
-    @Published var correo: String = "deibytb@outlook.com"
-    @Published var password: String = "123456"
+    @Published var correo: String = ""
+    @Published var password: String = ""
     @Published var emailIsValid: Bool?
     @Published var formIsValid: Bool = false
     

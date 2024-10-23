@@ -179,6 +179,7 @@ struct BetCardView: View {
         .cornerRadius(8)
         .shadow(color: AppColors.cardShadow.opacity(0.2), radius: 4 , x: 1, y: 2)
         .onTapGesture {
+            UIApplication.shared.endEditing()
             withAnimation {
                 isExpanded.toggle()
             }
@@ -189,6 +190,9 @@ struct BetCardView: View {
                     counter += 1
                 }
             })
+        }
+        .onDisappear {
+            counter = 0
         }
     }
     
