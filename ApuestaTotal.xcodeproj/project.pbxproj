@@ -15,8 +15,6 @@
 		C47D30B82CC2484900ED5863 /* ApuestaTotalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30B72CC2484900ED5863 /* ApuestaTotalUITestsLaunchTests.swift */; };
 		C47D30CC2CC24B3B00ED5863 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30CB2CC24B3B00ED5863 /* Bet.swift */; };
 		C47D30CE2CC24B4800ED5863 /* BetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30CD2CC24B4800ED5863 /* BetDetail.swift */; };
-		C47D30D32CC24D5000ED5863 /* betsAll.json in Resources */ = {isa = PBXBuildFile; fileRef = C47D30D12CC24D5000ED5863 /* betsAll.json */; };
-		C47D30D42CC24D5000ED5863 /* betsDetailsAll.json in Resources */ = {isa = PBXBuildFile; fileRef = C47D30D22CC24D5000ED5863 /* betsDetailsAll.json */; };
 		C47D30D72CC24DAF00ED5863 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30D62CC24DAF00ED5863 /* JSONLoader.swift */; };
 		C47D30D92CC2B41F00ED5863 /* BetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30D82CC2B41F00ED5863 /* BetService.swift */; };
 		C47D30DB2CC2B44F00ED5863 /* BetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30DA2CC2B44F00ED5863 /* BetRepository.swift */; };
@@ -26,8 +24,6 @@
 		C47D30E32CC2FD9300ED5863 /* BetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30E22CC2FD9300ED5863 /* BetViewModel.swift */; };
 		C47D30E52CC2FE7900ED5863 /* BetDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30E42CC2FE7900ED5863 /* BetDetailRepository.swift */; };
 		C47D30E72CC3074700ED5863 /* BetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30E62CC3074700ED5863 /* BetCardView.swift */; };
-		C47D30EB2CC33A6A00ED5863 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C47D30E92CC33A6A00ED5863 /* Rubik-Regular.ttf */; };
-		C47D30EC2CC33A6A00ED5863 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C47D30EA2CC33A6A00ED5863 /* Rubik-Bold.ttf */; };
 		C47D30F02CC33B8B00ED5863 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30EF2CC33B8B00ED5863 /* Fonts.swift */; };
 		C47D30FB2CC62F6F00ED5863 /* FilterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30FA2CC62F6F00ED5863 /* FilterHandler.swift */; };
 		C47D30FD2CC62FB700ED5863 /* StatusFilterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D30FC2CC62FB700ED5863 /* StatusFilterHandler.swift */; };
@@ -43,17 +39,21 @@
 		C47D31152CC7481D00ED5863 /* ValidateUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31142CC7481D00ED5863 /* ValidateUserUseCase.swift */; };
 		C47D31172CC7484D00ED5863 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31162CC7484D00ED5863 /* LoginViewModel.swift */; };
 		C47D31192CC7489500ED5863 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31182CC7489500ED5863 /* LoginView.swift */; };
-		C47D311B2CC74C4400ED5863 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = C47D311A2CC74C4400ED5863 /* user.json */; };
 		C47D311D2CC74D5300ED5863 /* ValidateEmailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D311C2CC74D5300ED5863 /* ValidateEmailUseCase.swift */; };
 		C47D311F2CC756DD00ED5863 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D311E2CC756DD00ED5863 /* UIApplication+Extensions.swift */; };
 		C47D31232CC7571F00ED5863 /* DismissKeyboardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31222CC7571F00ED5863 /* DismissKeyboardModifier.swift */; };
 		C47D31252CC7584900ED5863 /* AnimatedCardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31242CC7584900ED5863 /* AnimatedCardModifier.swift */; };
 		C47D31282CC765DA00ED5863 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D31272CC765DA00ED5863 /* AuthenticationViewModel.swift */; };
-		C47D31302CC77A3F00ED5863 /* RoundedCross.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312A2CC77A3F00ED5863 /* RoundedCross.swift */; };
-		C47D31312CC77A3F00ED5863 /* SlimRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312B2CC77A3F00ED5863 /* SlimRectangle.swift */; };
-		C47D31322CC77A3F00ED5863 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312C2CC77A3F00ED5863 /* Triangle.swift */; };
-		C47D31332CC77A3F00ED5863 /* ConfettiSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312E2CC77A3F00ED5863 /* ConfettiSwiftUI.swift */; };
-		C47D31342CC77A3F00ED5863 /* View+ConfettiCannon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D312F2CC77A3F00ED5863 /* View+ConfettiCannon.swift */; };
+		C4B5773C2CCDBB8500009BDD /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = C4B5773B2CCDBB8500009BDD /* user.json */; };
+		C4B5773F2CCDBB9F00009BDD /* betsAll.json in Resources */ = {isa = PBXBuildFile; fileRef = C4B5773D2CCDBB9F00009BDD /* betsAll.json */; };
+		C4B577402CCDBB9F00009BDD /* betsDetailsAll.json in Resources */ = {isa = PBXBuildFile; fileRef = C4B5773E2CCDBB9F00009BDD /* betsDetailsAll.json */; };
+		C4B577432CCDBBAF00009BDD /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4B577412CCDBBAF00009BDD /* Rubik-Bold.ttf */; };
+		C4B577442CCDBBAF00009BDD /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4B577422CCDBBAF00009BDD /* Rubik-Regular.ttf */; };
+		C4B5774B2CCDBBBC00009BDD /* ConfettiSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B577452CCDBBBC00009BDD /* ConfettiSwiftUI.swift */; };
+		C4B5774C2CCDBBBC00009BDD /* View+ConfettiCannon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B577462CCDBBBC00009BDD /* View+ConfettiCannon.swift */; };
+		C4B5774D2CCDBBBC00009BDD /* RoundedCross.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B577472CCDBBBC00009BDD /* RoundedCross.swift */; };
+		C4B5774E2CCDBBBC00009BDD /* SlimRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B577482CCDBBBC00009BDD /* SlimRectangle.swift */; };
+		C4B5774F2CCDBBBC00009BDD /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B577492CCDBBBC00009BDD /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +85,6 @@
 		C47D30B72CC2484900ED5863 /* ApuestaTotalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApuestaTotalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C47D30CB2CC24B3B00ED5863 /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
 		C47D30CD2CC24B4800ED5863 /* BetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetDetail.swift; sourceTree = "<group>"; };
-		C47D30D12CC24D5000ED5863 /* betsAll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = betsAll.json; path = "../../../../../Desktop/drive-Desafio-ApuestTotal/betsAll.json"; sourceTree = "<group>"; };
-		C47D30D22CC24D5000ED5863 /* betsDetailsAll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = betsDetailsAll.json; path = "../../../../../Desktop/drive-Desafio-ApuestTotal/betsDetailsAll.json"; sourceTree = "<group>"; };
 		C47D30D62CC24DAF00ED5863 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		C47D30D82CC2B41F00ED5863 /* BetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetService.swift; sourceTree = "<group>"; };
 		C47D30DA2CC2B44F00ED5863 /* BetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetRepository.swift; sourceTree = "<group>"; };
@@ -96,8 +94,6 @@
 		C47D30E22CC2FD9300ED5863 /* BetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetViewModel.swift; sourceTree = "<group>"; };
 		C47D30E42CC2FE7900ED5863 /* BetDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetDetailRepository.swift; sourceTree = "<group>"; };
 		C47D30E62CC3074700ED5863 /* BetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetCardView.swift; sourceTree = "<group>"; };
-		C47D30E92CC33A6A00ED5863 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Regular.ttf"; path = "../../../../../Downloads/Rubik/static/Rubik-Regular.ttf"; sourceTree = "<group>"; };
-		C47D30EA2CC33A6A00ED5863 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Bold.ttf"; path = "../../../../../Downloads/Rubik/static/Rubik-Bold.ttf"; sourceTree = "<group>"; };
 		C47D30ED2CC33AC400ED5863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C47D30EF2CC33B8B00ED5863 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		C47D30FA2CC62F6F00ED5863 /* FilterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterHandler.swift; sourceTree = "<group>"; };
@@ -114,17 +110,21 @@
 		C47D31142CC7481D00ED5863 /* ValidateUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUserUseCase.swift; sourceTree = "<group>"; };
 		C47D31162CC7484D00ED5863 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C47D31182CC7489500ED5863 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		C47D311A2CC74C4400ED5863 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = user.json; path = "../../../../../Downloads/drive-Desafio-ApuestTotal/user.json"; sourceTree = "<group>"; };
 		C47D311C2CC74D5300ED5863 /* ValidateEmailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmailUseCase.swift; sourceTree = "<group>"; };
 		C47D311E2CC756DD00ED5863 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		C47D31222CC7571F00ED5863 /* DismissKeyboardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardModifier.swift; sourceTree = "<group>"; };
 		C47D31242CC7584900ED5863 /* AnimatedCardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCardModifier.swift; sourceTree = "<group>"; };
 		C47D31272CC765DA00ED5863 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
-		C47D312A2CC77A3F00ED5863 /* RoundedCross.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCross.swift; sourceTree = "<group>"; };
-		C47D312B2CC77A3F00ED5863 /* SlimRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimRectangle.swift; sourceTree = "<group>"; };
-		C47D312C2CC77A3F00ED5863 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
-		C47D312E2CC77A3F00ED5863 /* ConfettiSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfettiSwiftUI.swift; path = "../../../../../Downloads/ConfettiSwiftUI-master/Sources/ConfettiSwiftUI.swift"; sourceTree = "<group>"; };
-		C47D312F2CC77A3F00ED5863 /* View+ConfettiCannon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "View+ConfettiCannon.swift"; path = "../../../../../Downloads/ConfettiSwiftUI-master/Sources/View+ConfettiCannon.swift"; sourceTree = "<group>"; };
+		C4B5773B2CCDBB8500009BDD /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		C4B5773D2CCDBB9F00009BDD /* betsAll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = betsAll.json; sourceTree = "<group>"; };
+		C4B5773E2CCDBB9F00009BDD /* betsDetailsAll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = betsDetailsAll.json; sourceTree = "<group>"; };
+		C4B577412CCDBBAF00009BDD /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		C4B577422CCDBBAF00009BDD /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		C4B577452CCDBBBC00009BDD /* ConfettiSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiSwiftUI.swift; sourceTree = "<group>"; };
+		C4B577462CCDBBBC00009BDD /* View+ConfettiCannon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ConfettiCannon.swift"; sourceTree = "<group>"; };
+		C4B577472CCDBBBC00009BDD /* RoundedCross.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCross.swift; sourceTree = "<group>"; };
+		C4B577482CCDBBBC00009BDD /* SlimRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimRectangle.swift; sourceTree = "<group>"; };
+		C4B577492CCDBBBC00009BDD /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,9 +295,9 @@
 		C47D30D02CC24D3300ED5863 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				C47D311A2CC74C4400ED5863 /* user.json */,
-				C47D30D12CC24D5000ED5863 /* betsAll.json */,
-				C47D30D22CC24D5000ED5863 /* betsDetailsAll.json */,
+				C4B5773D2CCDBB9F00009BDD /* betsAll.json */,
+				C4B5773E2CCDBB9F00009BDD /* betsDetailsAll.json */,
+				C4B5773B2CCDBB8500009BDD /* user.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -315,8 +315,8 @@
 		C47D30E82CC3399C00ED5863 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				C47D30EA2CC33A6A00ED5863 /* Rubik-Bold.ttf */,
-				C47D30E92CC33A6A00ED5863 /* Rubik-Regular.ttf */,
+				C4B577412CCDBBAF00009BDD /* Rubik-Bold.ttf */,
+				C4B577422CCDBBAF00009BDD /* Rubik-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -408,22 +408,21 @@
 		C47D31292CC77A2800ED5863 /* ConfettiSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				C47D312D2CC77A3F00ED5863 /* Shapes */,
-				C47D312E2CC77A3F00ED5863 /* ConfettiSwiftUI.swift */,
-				C47D312F2CC77A3F00ED5863 /* View+ConfettiCannon.swift */,
+				C4B577452CCDBBBC00009BDD /* ConfettiSwiftUI.swift */,
+				C4B5774A2CCDBBBC00009BDD /* Shapes */,
+				C4B577462CCDBBBC00009BDD /* View+ConfettiCannon.swift */,
 			);
 			path = ConfettiSwiftUI;
 			sourceTree = "<group>";
 		};
-		C47D312D2CC77A3F00ED5863 /* Shapes */ = {
+		C4B5774A2CCDBBBC00009BDD /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				C47D312A2CC77A3F00ED5863 /* RoundedCross.swift */,
-				C47D312B2CC77A3F00ED5863 /* SlimRectangle.swift */,
-				C47D312C2CC77A3F00ED5863 /* Triangle.swift */,
+				C4B577472CCDBBBC00009BDD /* RoundedCross.swift */,
+				C4B577482CCDBBBC00009BDD /* SlimRectangle.swift */,
+				C4B577492CCDBBBC00009BDD /* Triangle.swift */,
 			);
-			name = Shapes;
-			path = "../../../../../Downloads/ConfettiSwiftUI-master/Sources/Shapes";
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,13 +529,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47D311B2CC74C4400ED5863 /* user.json in Resources */,
-				C47D30D42CC24D5000ED5863 /* betsDetailsAll.json in Resources */,
-				C47D30EC2CC33A6A00ED5863 /* Rubik-Bold.ttf in Resources */,
+				C4B5773C2CCDBB8500009BDD /* user.json in Resources */,
+				C4B577442CCDBBAF00009BDD /* Rubik-Regular.ttf in Resources */,
+				C4B577432CCDBBAF00009BDD /* Rubik-Bold.ttf in Resources */,
 				C47D30A22CC2484900ED5863 /* Preview Assets.xcassets in Resources */,
 				C47D309F2CC2484900ED5863 /* Assets.xcassets in Resources */,
-				C47D30EB2CC33A6A00ED5863 /* Rubik-Regular.ttf in Resources */,
-				C47D30D32CC24D5000ED5863 /* betsAll.json in Resources */,
+				C4B5773F2CCDBB9F00009BDD /* betsAll.json in Resources */,
+				C4B577402CCDBB9F00009BDD /* betsDetailsAll.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,10 +561,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47D30F02CC33B8B00ED5863 /* Fonts.swift in Sources */,
-				C47D31302CC77A3F00ED5863 /* RoundedCross.swift in Sources */,
-				C47D31342CC77A3F00ED5863 /* View+ConfettiCannon.swift in Sources */,
 				C47D31052CC6D6D000ED5863 /* Colors.swift in Sources */,
 				C47D30FF2CC62FFF00ED5863 /* TypeFilterHandler.swift in Sources */,
+				C4B5774F2CCDBBBC00009BDD /* Triangle.swift in Sources */,
 				C47D30D72CC24DAF00ED5863 /* JSONLoader.swift in Sources */,
 				C47D31282CC765DA00ED5863 /* AuthenticationViewModel.swift in Sources */,
 				C47D31152CC7481D00ED5863 /* ValidateUserUseCase.swift in Sources */,
@@ -574,27 +572,28 @@
 				C47D30E52CC2FE7900ED5863 /* BetDetailRepository.swift in Sources */,
 				C47D311D2CC74D5300ED5863 /* ValidateEmailUseCase.swift in Sources */,
 				C47D31172CC7484D00ED5863 /* LoginViewModel.swift in Sources */,
-				C47D31322CC77A3F00ED5863 /* Triangle.swift in Sources */,
 				C47D30D92CC2B41F00ED5863 /* BetService.swift in Sources */,
 				C47D30CE2CC24B4800ED5863 /* BetDetail.swift in Sources */,
+				C4B5774D2CCDBBBC00009BDD /* RoundedCross.swift in Sources */,
 				C47D31132CC747CB00ED5863 /* UserRepository.swift in Sources */,
 				C47D30E72CC3074700ED5863 /* BetCardView.swift in Sources */,
 				C47D31252CC7584900ED5863 /* AnimatedCardModifier.swift in Sources */,
 				C47D30FB2CC62F6F00ED5863 /* FilterHandler.swift in Sources */,
 				C47D30E12CC2B51900ED5863 /* BetListView.swift in Sources */,
 				C47D311F2CC756DD00ED5863 /* UIApplication+Extensions.swift in Sources */,
-				C47D31312CC77A3F00ED5863 /* SlimRectangle.swift in Sources */,
 				C47D31032CC6310200ED5863 /* FilterBetsUseCase.swift in Sources */,
-				C47D31332CC77A3F00ED5863 /* ConfettiSwiftUI.swift in Sources */,
 				C47D30CC2CC24B3B00ED5863 /* Bet.swift in Sources */,
 				C47D31072CC7416600ED5863 /* MainView.swift in Sources */,
 				C47D309B2CC2484800ED5863 /* ApuestaTotalApp.swift in Sources */,
+				C4B5774C2CCDBBBC00009BDD /* View+ConfettiCannon.swift in Sources */,
+				C4B5774B2CCDBBBC00009BDD /* ConfettiSwiftUI.swift in Sources */,
 				C47D30FD2CC62FB700ED5863 /* StatusFilterHandler.swift in Sources */,
 				C47D30E32CC2FD9300ED5863 /* BetViewModel.swift in Sources */,
 				C47D31192CC7489500ED5863 /* LoginView.swift in Sources */,
 				C47D31232CC7571F00ED5863 /* DismissKeyboardModifier.swift in Sources */,
 				C47D30DD2CC2B49400ED5863 /* GetBetsUseCase.swift in Sources */,
 				C47D30DB2CC2B44F00ED5863 /* BetRepository.swift in Sources */,
+				C4B5774E2CCDBBBC00009BDD /* SlimRectangle.swift in Sources */,
 				C47D31012CC6302300ED5863 /* SearchTextFilterHandler.swift in Sources */,
 				C47D31092CC7418800ED5863 /* SplashView.swift in Sources */,
 				C47D31112CC7477400ED5863 /* User.swift in Sources */,
